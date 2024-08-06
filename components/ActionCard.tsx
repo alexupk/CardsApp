@@ -29,7 +29,11 @@ export default class ActionCard extends Component {
                         <TouchableOpacity onPress={() => openWebSite("https://reactnative.dev/docs/linking")}>
                             <Text style={styles.linkCard}>Read more</Text>
                         </TouchableOpacity>
+                        <TouchableOpacity onPress={() => openWebSite("https://reactnative.dev/docs/linking")}>
+                            <Text style={styles.linkCard}>Follow me</Text>
+                        </TouchableOpacity>
                     </View>
+                    
                 </View>
             </View>
         )
@@ -62,11 +66,21 @@ const styles = StyleSheet.create({
         height: 180
     },
     bodyContainer:{
+        padding: 10
     },
     footerContainer:{
+        padding:8,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-evenly"
     },
     linkCard:{
+        fontSize: 16,
+        color: "#000000",
+        backgroundColor: "#90EE90",
+        paddingHorizontal: 20,
+        paddingVertical: 6,
+        borderRadius: 6
     }
 })
 
-// 9 хв.
